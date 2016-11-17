@@ -55,6 +55,7 @@ rabbitmqctl add_user openstack openstack
 rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 
 #Configure Database
+yum install MySQL-python -y 
 python db.py
 
 
