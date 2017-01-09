@@ -22,9 +22,9 @@ cursor.execute("GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
   IDENTIFIED BY 'openstack';")
 #Crete Nova
 cursor.execute("CREATE DATABASE nova;")
-cursor.execute("GRANT ALL PRIVILEGES ON glance.* TO 'nova'@'localhost' \
+cursor.execute("GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost' \
   IDENTIFIED BY 'openstack';")
-cursor.execute("GRANT ALL PRIVILEGES ON glance.* TO 'nova'@'%' \
+cursor.execute("GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' \
   IDENTIFIED BY 'openstack';")
 #Create neutron
 cursor.execute("CREATE DATABASE neutron;")
